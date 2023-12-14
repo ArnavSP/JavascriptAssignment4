@@ -1,0 +1,88 @@
+body {
+    background-color: #393737;
+    color: #333;
+    margin: 4%;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.student-info {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.job-info {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.job-info:hover {
+    transform: translateY(-5px);
+}
+
+.job-info img {
+    max-width: 100px;
+    height: auto;
+    max-height: 150px;
+    border-bottom: 1px solid #ddd;
+}
+
+.job-info p {
+    margin-bottom: 10px;
+}
+
+.searchButton label {
+
+    font-weight: bold;
+    margin-right: 10px;
+    color: #ddd;
+}
+
+#job-name-input {
+    padding: 10px;
+    margin-right: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+    border-radius: 5px;
+    border-color: #3498db; 
+}
+
+#search-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the fadeIn animation to elements with the 'animated' class */
+.animated {
+    animation: fadeIn 1s ease-in-out;
+}
